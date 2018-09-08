@@ -1,0 +1,202 @@
+/*-----Paleta de colores 
+#7f9183 rgb(127,145,131)  -!verde grisaseo
+#b8b8aa rgb(184,184,170)  -!gris
+#0f0f0f rgb(15,15,15)     -!negro
+#91c9b5 rgb(145,201,181)  -!verde vivo
+#edc0d8 rgb(237,192,216)  -!rosa
+----------------------*/
+
+/*---TIPOGRAFIA---*/
+
+/*@import url('https://fonts.googleapis.com/css?family=Mrs+Saint+Delafield|Raleway:300,400,700');*/
+
+@font-face {
+	font-family: 'Raleway';
+	src:  url('fonts/Raleway/Raleway-Light.ttf'), url('fonts/Raleway/Raleway-Medium.ttf'), url('fonts/Raleway/Raleway-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Mrs Saint Delafield';
+	src: url('fonts/Mrs_Saint_Delafield/MrsSaintDelafield-Regular.ttf');
+}
+
+h1, h2, h3 {
+	font-family: 'Mrs Saint Delafield', serif;
+}
+
+p, a, h5 {
+	font-family: 'Raleway', sans-serif;
+}
+
+h3 {
+	font-size: 50px;
+}
+h2 {
+	font-size: 2.5rem;
+}
+p {
+	font-size: 13px;
+}
+
+h1 {
+	font-size: 75px;
+}
+
+/*---BARRA DE NAVEGACIÓN---*/
+
+.navbar {
+  background-color: rgb(15,15,15, .5);
+}
+
+.scrolling-navbar {
+  transition: background .5s ease-in-out, padding .5s ease-in-out;
+}
+
+.top-nav-collapse {
+  background-color: rgb(15,15,15, .8);
+}
+
+footer.page-footer {
+  background-color: rgb(15,15,15, .8);
+}
+/*---ENLACES barra de navegación---*/
+nav div a img {
+	height: 65px;
+}
+
+/*nav div a {
+	color: #7f9183;
+}*/
+
+a {
+	text-decoration-color: none;	
+}
+
+a.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #91c9b5;
+    transition: width .3s;
+}
+
+a.nav-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+    color: white;
+}
+
+#servicios {
+    padding-right: 40px; 
+    padding-left: 40px;
+}
+ /*---MEDIA QUERY--
+ --------------------------------*/
+@media (max-width: 767.98px) {
+  .navbar {
+    background-color: rgb(15,15,15, .8);
+  }
+  .navbar-nav .nav-link {
+	text-align: center;
+  }
+  .navbar-nav a {
+  	transition: background-color .5s;
+  }
+  #servicios {
+    padding-right: 0; 
+    padding-left: 0;
+ }
+  .card {
+  	size: 200px;
+  }
+}
+
+/* CAROUSEL NECESARIO*/
+html,
+body,
+header
+.view {
+  height: 100%;
+}
+
+/*---CAROUSEL---*/
+.carousel,
+.carousel-item,
+.carousel-item.active {
+  height: 100%;
+}
+.carousel-inner {
+  height: 100%;
+}
+.carousel-item:nth-child(1) {
+  background-image: url("../img/pics/alta/cafe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  background-position: center center;
+}
+.carousel-item:nth-child(2) {
+  background-image: url("../img/pics/alta/tostadas.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.carousel-item:nth-child(3) {
+  background-image: url("../img/pics/alta/sushi.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/*https://i.hipertextual.com/2018/09/02/centro.jpg
+https://i.hipertextual.com/2018/09/02/cafe.jpg
+"https://images.unsplash.com/photo-1504712598893-24159a89200e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f750a83e2097b31a9c7f3835335f9d12&auto=format&fit=crop&w=751&q=80
+https://images.unsplash.com/photo-1523006652645-f12b288393c3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3323fceabf207ac0329a22dc50f027d8&auto=format&fit=crop&w=749&q=80*/
+
+
+/*---HISTORIA SECCION---*/
+
+#historia img {
+	border-radius: 2px;
+}
+
+/*---IMAGENES MENU--*/
+
+img.menu {
+	border-radius: 3px;
+}
+
+
+/*---BOTONES---*/
+
+.botones {
+	background-color: rgb(15,15,15, .8);
+}
+
+label::after { {
+	background-color: black;
+}
+
+/*---CONTACT---*/
+
+#contact {
+	background: linear-gradient(rgba(15, 15, 15, 0.9),rgba(15, 15, 15, 0.3)),
+        url(img/pics/front-store-long.jpg)
+        fixed;
+    background-size: cover;
+    height: 50%;
+}
+
+.degradado {
+	background:  linear-gradient(rgba(15, 15, 15, 0.9),rgba(15, 15, 15, 0.3)), center fixed;
+    background-size: cover;
+    height: 20%
+}
+
+/*----ICONOS----*/
+a:any-link {
+    color: white;
+}
+
+a:-webkit-any-link {
+	color: white;
+}
